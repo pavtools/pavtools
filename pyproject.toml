@@ -10,8 +10,8 @@ python = "^3.12"
 typer = "^0.12.5"
 pavaudio = {git = "https://github.com/pavtools/pavaudio", optional = true}
 inquirerpy = "^0.3.4"
-appdirs = "^1.4.4"
 pedalboard = "^0.9.16"
+platformdirs = "^4.3.6"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3.3"
