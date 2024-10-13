@@ -4,7 +4,7 @@ from itertools import chain
 from pathlib import Path
 from os import sep
 
-from appdirs import AppDirs
+from platformdirs import PlatformDirs
 from typer import Exit, Typer
 from InquirerPy import inquirer
 from InquirerPy.validator import PathValidator
@@ -13,7 +13,7 @@ from pedalboard import load_plugin
 from pavtools.cli_stubs import app as stub_app
 
 app = Typer(help='PAVtools!', no_args_is_help=True)
-dirs = AppDirs('sigchain', 'pavtools')
+dirs = PlatformDirs('sigchain', 'pavtools')
 config_path = Path(dirs.user_config_dir)
 
 app.registered_commands += stub_app.registered_commands
