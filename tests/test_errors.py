@@ -12,8 +12,11 @@ def test_try_import(capsys):
     with pytest.raises(SystemExit):
         func()
 
-        assert captured.out == """Please install batata:
+        assert (
+            captured.out
+            == """Please install batata:
 
 pipx install batata
 
 or pipx install pavtools[batata]"""
+        )

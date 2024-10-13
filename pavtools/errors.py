@@ -4,6 +4,7 @@ from importlib import import_module
 from typing import Callable
 
 from rich.console import Console
+
 console = Console()
 
 
@@ -24,5 +25,7 @@ def try_import(module_name: str):
                 )
                 sys.exit()
             return func(*args, **kwargs)
+
         return __inner
+
     return _inner
