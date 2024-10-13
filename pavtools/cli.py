@@ -8,7 +8,7 @@ app.registered_commands += stub_app.registered_commands
 
 
 try:
-    from pavaudio import cli as audio_cli
+    from pavaudio.cli import app as audio_cli
     app.registered_commands += audio_cli.registered_commands
 except:
     ...

@@ -83,6 +83,25 @@ files = [
 ]
 
 [[package]]
+name = "pavaudio"
+version = "0.0.1"
+description = ""
+optional = true
+python-versions = "^3.12"
+files = []
+develop = false
+
+[package.dependencies]
+pydub = "^0.25.1"
+typer = "^0.12.5"
+
+[package.source]
+type = "git"
+url = "https://github.com/pavtools/pavaudio"
+reference = "HEAD"
+resolved_reference = "a624a689e4fc3d5442eda493b023020ab1ff4c70"
+
+[[package]]
 name = "pluggy"
 version = "1.5.0"
 description = "plugin and hook calling mechanisms for python"
@@ -96,6 +115,17 @@ files = [
 [package.extras]
 dev = ["pre-commit", "tox"]
 testing = ["pytest", "pytest-benchmark"]
+
+[[package]]
+name = "pydub"
+version = "0.25.1"
+description = "Manipulate audio with an simple and easy high level interface"
+optional = true
+python-versions = "*"
+files = [
+    {file = "pydub-0.25.1-py2.py3-none-any.whl", hash = "sha256:65617e33033874b59d87db603aa1ed450633288aefead953b30bded59cb599a6"},
+    {file = "pydub-0.25.1.tar.gz", hash = "sha256:980a33ce9949cab2a569606b65674d748ecbca4f0796887fd6f46173a7b0d30f"},
+]
 
 [[package]]
 name = "pygments"
@@ -188,7 +218,10 @@ files = [
     {file = "typing_extensions-4.12.2.tar.gz", hash = "sha256:1a7ead55c7e559dd4dee8856e3a88b41225abfe1ce8df57b7c13915fe121ffb8"},
 ]
 
+[extras]
+audio = ["pavaudio"]
+
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "0bc6d0575d5cd66ac40d9dd7f76202d574e5fdcf7395bf3a740b6f25fdab80b7"
+content-hash = "cf85c34291ac7c464812c33013fe0efe44efbad18e0a94864e1f3e77fe9cd485"

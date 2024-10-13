@@ -8,7 +8,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.12"
 typer = "^0.12.5"
-pavaudio = { version = "^0.0.1", optional = true }
+pavaudio = {git = "https://github.com/pavtools/pavaudio", optional = true}
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3.3"
