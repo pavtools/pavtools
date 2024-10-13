@@ -18,7 +18,6 @@ config_path = Path(dirs.user_config_dir)
 
 app.registered_commands += stub_app.registered_commands
 
-
 def safe_eval_plugin(plugin, param) -> float | bool | str:
     try:
         return literal_eval(str(getattr(plugin, param)))

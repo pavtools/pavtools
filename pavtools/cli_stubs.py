@@ -16,6 +16,7 @@ def extract_audio():
 def cut_silences():
     """Removes all silences from an audio file."""
 
+
 @app.command()
 @try_import('pavaudio')
 def audio_processing():

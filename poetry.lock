@@ -183,6 +183,8 @@ files = []
 develop = false
 
 [package.dependencies]
+appdirs = "^1.4.4"
+pedalboard = "^0.9.16"
 pydub = "^0.25.1"
 typer = "^0.12.5"
 
@@ -190,7 +192,7 @@ typer = "^0.12.5"
 type = "git"
 url = "https://github.com/pavtools/pavaudio"
 reference = "HEAD"
-resolved_reference = "a624a689e4fc3d5442eda493b023020ab1ff4c70"
+resolved_reference = "cb8e0ce011a8386027b00f0186b204799e72057c"
 
 [[package]]
 name = "pedalboard"
